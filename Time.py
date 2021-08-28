@@ -44,6 +44,8 @@ class Time:
                 self.m += 60
             if self.h < 0:
                 self.h += 24
+            if self.h >= 24:
+                self.h -= 24
             print(str(int(self.h)).zfill(2),":",str(int(self.m)).zfill(2),":",str(int(self.s)).zfill(2))
 
 time1 = input('Please enter time1-{hour:minute:second} : ')
